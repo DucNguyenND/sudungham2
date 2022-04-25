@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function array(number){
+        let array1=[]
+        let a=parseInt(prompt("Nhập số phần tử của mảng"))
+        for (let i = 0; i < a; i++) {
+            let b=prompt("Nhập phần tử số "+ (i+1));
+            array1[i]=b;
+        }
+        let count=0
+        for (let j = 0; j < array1.length; j++) {
+            if (number===array1[j]){
+                count++;
+            }
+        }
+        if (count===0) count=-1
+        console.log(count)
+    }
+    let c=prompt("Nhập vào số cần kiểm tra")
+    array(c)
+</script>
+</body>
+</html>
